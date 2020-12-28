@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AddTheTaskScreen">
+
+    <TextView
+        android:id="@+id/tvErrorMessage"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:textSize="10dp"
+        android:backgroundTint="#eee"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_rectangle"
+        android:text="To create a task you need to fill all fields\n(Notes optional)"
+        android:layout_width="wrap_content"
+        android:padding="14dp"
+        android:visibility="gone"
+        android:textColor="#FF2200"
+        android:layout_marginBottom="20dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tasktitle_tv"
+        android:layout_width="110dp"
+        android:layout_below="@+id/tvErrorMessage"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Task Title:-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tasktitle_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fill Title"
+        android:layout_below="@+id/tvErrorMessage"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/tasktitle_tv"
+        android:background="@drawable/background_rectangle"
+        android:inputType="text"
+        android:padding="8dp"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/icon_title"/>
+
+    <TextView
+        android:id="@+id/taskday_tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasktitle_tv"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Task Day:-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/taskday_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasktitle_et"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/taskday_tv"
+        android:background="@drawable/background_rectangle"
+        android:clickable="true"
+        android:hint="Click to set Date"
+        android:onClick="datePickerDialog"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/icon_calender" />
+
+    <TextView
+        android:id="@+id/tasktime_tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskday_tv"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Task Time:-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tasktime_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskday_et"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/tasktime_tv"
+        android:background="@drawable/background_rectangle"
+        android:clickable="true"
+        android:hint="Click to set Time"
+        android:onClick="timePickerDialog"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/icon_time" />
+
+    <TextView
+        android:id="@+id/tasknote_tv"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasktime_tv"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:text="Task Note:-"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/tasknote_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasktime_et"
+        android:layout_margin="8dp"
+        android:layout_toEndOf="@+id/tasknote_tv"
+        android:background="@drawable/background_rectangle"
+        android:hint="Fill Note"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:drawableEndCompat="@drawable/icon_note"/>
+
+    <Button
+        android:text="Add Task"
+        android:id="@+id/sendTaskData"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tasknote_et"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "709425583675",
+    "project_id": "ptimetableapp",
+    "storage_bucket": "ptimetableapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709425583675:android:6490118156abf041b5ee1e",
+        "android_client_info": {
+          "package_name": "com.justinpjose.ptimetableapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709425583675-0agtu47okkss3peach0814v3sf76d826.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAThjpeFG-Smyl2h7Fjy-CLBd_0NiIyqPk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709425583675-0agtu47okkss3peach0814v3sf76d826.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Daily Tasks</string>
+    <string name="developer_name">Developed by Justin P Jose.</string>
+    <string name="login_screen_register_account">Dont have an account? Register <b>Here</b></string>
+    <string name="login_screen_reset_password">Forgot Password? Reset <b>Here</b></string>
+    <string name="register_screen_info">Fill the below fields to register</string>
+    <string name="forgot_password_screen_info">Fill the below field to receive reset link</string>
+</resources>
